@@ -491,12 +491,14 @@ class GP_Locales {
 		$bg->alphabet = 'cyrillic';
 
 		$bgn = new GP_Locale();
-		$bgn->english_name = 'Balochi (western)';
+		$bgn->english_name = 'Balochi (Western)';
 		$bgn->native_name = 'مغربی بلوچی';
 		$bgn->lang_code_iso_639_3 = 'bgn';
 		$bgn->country_code = 'pk';
 		$bgn->wp_locale = 'bgn';
 		$bgn->slug = 'bgn';
+		$bgn->nplurals = 1;
+		$bgn->plural_expression = '0';
 		$bgn->text_direction = 'rtl';
 		$bgn->alphabet = 'balochi';
 
