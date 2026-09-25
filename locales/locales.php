@@ -502,7 +502,7 @@ class GP_Locales {
 
 		$bh = new GP_Locale();
 		$bh->english_name = 'Bihari';
-		$bh->native_name = 'भोजपुरी';
+		$bh->native_name = 'बिहारी';
 		$bh->lang_code_iso_639_1 = 'bh';
 		$bh->lang_code_iso_639_2 = 'bih';
 		$bh->slug = 'bh';
@@ -837,7 +837,9 @@ class GP_Locales {
 
 		$el_po = new GP_Locale();
 		$el_po->english_name = 'Greek (Polytonic)';
-		$el_po->native_name = 'Greek (Polytonic)'; // TODO.
+		$el_po->native_name = 'Ἑλληνική';
+		$el_po->lang_code_iso_639_1 = 'el';
+		$el_po->lang_code_iso_639_2 = 'ell';
 		$el_po->country_code = 'gr';
 		$el_po->slug = 'el-po';
 		$el_po->alphabet  = 'polytonic';
@@ -1175,7 +1177,7 @@ class GP_Locales {
 
 		$fa_af = new GP_Locale();
 		$fa_af->english_name = 'Persian (Afghanistan)';
-		$fa_af->native_name = '(فارسی (افغانستان';
+		$fa_af->native_name = 'فارسی (افغانستان)';
 		$fa_af->lang_code_iso_639_1 = 'fa';
 		$fa_af->lang_code_iso_639_2 = 'fas';
 		$fa_af->country_code = 'af';
@@ -1320,7 +1322,7 @@ class GP_Locales {
 
 		$ga = new GP_Locale();
 		$ga->english_name = 'Irish';
-		$ga->native_name = 'Gaelige';
+		$ga->native_name = 'Gaeilge';
 		$ga->lang_code_iso_639_1 = 'ga';
 		$ga->lang_code_iso_639_2 = 'gle';
 		$ga->country_code = 'ie';
@@ -2172,6 +2174,7 @@ class GP_Locales {
 		$pa_pk->slug = 'pa-pk';
 		$pa_pk->nplurals = 2;
 		$pa_pk->plural_expression = 'n > 1';
+		$pa_pk->text_direction = 'rtl';
 		$pa_pk->google_code = 'pa';
 		$pa_pk->alphabet = 'shahmukhi';
 
@@ -2555,11 +2558,12 @@ class GP_Locales {
 
 		$syr = new GP_Locale();
 		$syr->english_name = 'Syriac';
-		$syr->native_name = 'Syriac';
+		$syr->native_name = 'ܣܘܪܝܝܐ';
 		$syr->lang_code_iso_639_3 = 'syr';
 		$syr->country_code = 'iq';
 		$syr->wp_locale = 'syr';
 		$syr->slug = 'syr';
+		$syr->text_direction = 'rtl';
 		$syr->alphabet = 'syriac';
 
 		$szl = new GP_Locale();
@@ -2570,7 +2574,7 @@ class GP_Locales {
 		$szl->wp_locale = 'szl';
 		$szl->slug = 'szl';
 		$szl->nplurals = 3;
-		$szl->plural_expression = '(n==1 ? 0 : n%10>=2 && n%10<=4 && n%100==20 ? 1 : 2)';
+		$szl->plural_expression = '(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)';
 		$szl->facebook_locale = 'sz_PL';
 
 		$ta = new GP_Locale();
@@ -2897,6 +2901,7 @@ class GP_Locales {
 		$zh->nplurals = 1;
 		$zh->plural_expression = '0';
 		$zh->alphabet = 'hanyu';
+		$zh->word_count_type = 'characters_excluding_spaces';
 
 		$zh_cn = new GP_Locale();
 		$zh_cn->english_name = 'Chinese (China)';
@@ -2924,7 +2929,7 @@ class GP_Locales {
 		$zh_hk->nplurals = 1;
 		$zh_hk->plural_expression = '0';
 		$zh_hk->facebook_locale = 'zh_HK';
-		$zh_hk->alphabet = 'simplified-chinese';
+		$zh_hk->alphabet = 'traditional-chinese';
 		$zh_hk->word_count_type = 'characters_excluding_spaces';
 
 		$zh_sg = new GP_Locale();
